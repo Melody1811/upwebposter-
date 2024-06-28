@@ -1,0 +1,415 @@
+@font-face {
+    font-family: "Aeroport";
+    src: url("../fonts/Aeroport.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Aeroport-Light";
+    src: url("../fonts/Aeroport-Light.ttf") format("truetype");
+    font-style: Light;
+    font-weight: Light;
+}
+@font-face {
+    font-family: "AeroportMono";
+    src: url("../fonts/AeroportMono.ttf") format("truetype");
+    font-style: Light;
+    font-weight: Light;
+}
+@font-face {
+    font-family: "Aeroport-LightItalic";
+    src: url("../fonts/Aeroport-LightItalic.ttf") format("truetype");
+    font-style: Light italic;
+    font-weight: Ligh italic;
+}
+@font-face {
+    font-family: "Aeroport-Italic";
+    src: url("../fonts/Aeroport-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: italic;
+}
+p{
+    color: black;
+    font-family: 'Aeroport';
+    font-size: 4vw;
+}
+h1{
+    font-family: "Aeroport";
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 400;
+    height: normal;
+}
+h2{
+    font-family: "Aeroport";
+    font-style: normal;
+}
+.favicon{
+    width: 5vw;
+}
+/* БЛОК 1 */
+.block1{
+    /* background-color: #C7FF51; */
+    /* background-color: #FF2F9F; */
+    background-color: #ffffff;
+    position: fixed;
+    width: 100vw; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 5;
+    /* pointer-events: none; */
+}
+.header{
+    margin-left: 0.3vw;
+    font-size: 4vw;
+    pointer-events: none;
+    width: 5vw;
+}
+header:hover{
+    color: #C7FF51;
+} 
+
+.header2{
+    pointer-events: none;
+}
+
+*{ box-sizing: border-box;}
+.index{
+    /* background: rgb(255, 255, 255); */
+    background: #C7FF51;
+    width: 100vw; 
+}
+.afisha{
+    /* background: #C7FF51; */
+    background: rgb(0, 0, 0);
+    width: 100vw; 
+}
+
+
+#canvas-target{
+    overflow: hidden;
+    width: 110vw; 
+    height: 30%;
+    margin-left: -5vw;
+    display: block;
+    cursor: pointer;
+}
+.positioning { 
+    display: none;
+    position: relative;
+    margin-bottom: 40%;
+}
+
+.a-image {
+   position: absolute;
+    width: 100vw; 
+    height: 100vw; 
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out; 
+}
+.a-image:hover {
+    transform: scale(1.5); 
+}
+
+.allposters{ 
+    cursor: pointer;
+    position: relative;
+    display: block;
+    text-align:center;
+    justify-content: center;
+}
+
+.posters{
+    margin-top: 10vw;
+    /* position: absolute; */
+    width: 25vw; 
+    height: 25vw; 
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out; 
+    opacity: 60%;
+}
+
+.posters:hover {
+    transform: scale(1.2); 
+    opacity: 100%;
+}
+
+.num{
+    font-family: 'Aeroport'; 
+    font-size: 1.8vw; 
+    z-index: 100; 
+    background: #ffffff; 
+    border-radius: 7vw; 
+    border: 1.5px solid rgb(0, 0, 0);
+    text-align: center; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    width: 5vw; 
+    height: 5vw; 
+    line-height: 3.5vw; 
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    font-family: 'Aeroport'; 
+    font-size: 1.8vw; 
+    z-index: 100; 
+    background: #ffffff; 
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 7vw; 
+    text-align: center; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    width: 22vw; 
+    height: 5vw; 
+    display: flex;
+    flex-direction: column;
+}
+
+.poyavis{
+    display: none;
+    width: 20%;
+    /* pointer-events: none; */
+}
+.menushka{
+    position: absolute;
+    margin-left: 0.5vw;
+    margin-top: 5vw;
+    /* backdrop-filter: blur(2px);
+    z-index: 2; */
+}
+
+.menushka div{
+    display: flex;
+    /* flex-direction: column; */
+    margin-bottom:  0.5vw;
+    margin-left: 0.5vw;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu4{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu4 div:hover{ 
+    background: #000000; 
+    color: #C7FF51; 
+    font-family: "Aeroport-LightItalic";
+    border: 2px solid black; 
+    cursor: pointer; 
+    /* transform: translateX(-10%); */
+    transform: translate(0px, 0%);
+}
+.menu3 div:hover{ 
+    background: #000000; 
+    color: #C7FF51; 
+    border: 2px solid black; 
+    cursor: pointer; 
+    font-family: "Aeroport-LightItalic";
+}
+.menu2 div:hover{ 
+    background: #000000; 
+    color: #C7FF51; 
+    border: 2px solid black; 
+    cursor: pointer;
+    font-family: "Aeroport-LightItalic"; 
+}
+.menu1 div:hover{ 
+    background: #000000; 
+    color: #C7FF51; 
+    border: 2px solid black; 
+    cursor: pointer;
+    font-family: "Aeroport-LightItalic";
+}
+
+
+.modal{ 
+    display: none; 
+    position: fixed; 
+    z-index: 3; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(3px); 
+} 
+ 
+.modal-content{ 
+    backdrop-filter: blur(4px);
+    filter: brightness(110%);
+    margin: 15% auto; 
+    padding: 1vw; 
+    width: 30%; 
+    border: 0.1vw solid #ddd; 
+    border-radius: 1vw; 
+    font-family: 'Aeroport'; 
+  } 
+  .close{ 
+    color:#999; 
+    float: right; 
+    font-size: 1.5vw; 
+    font-weight: light; 
+    font-family: 'Aeroport'; 
+  } 
+ 
+  .close:hover{ 
+    color: #C7FF51;
+    text-decoration: none; 
+    cursor: pointer; 
+  } 
+ 
+  input[type="text"],input[type="email"],input[type="tel"], input [type="submit"] select{ 
+    display: block; 
+    width: 20vw; 
+    position: relative; 
+    margin: 1.5vw auto; 
+    height: 3.5vw; 
+    padding: 0 2vw; 
+    font-size: 1.5vw; 
+    border-radius: 3vw; 
+    border: 1px solid #ddd; 
+    /* background: #ddd;  */
+    font-family: 'Aeroport'; 
+} 
+.regg{ 
+    width: 4vw; 
+    font-family: 'Aeroport'; 
+} 
+#send{ 
+    text-decoration: none; 
+    font-family: 'Aeroport'; 
+    position: relative; 
+    margin: 2vw auto; 
+    height: 3.5vw; 
+    padding: 0 2vw; 
+    font-size: 1.5vw; 
+    display: block; 
+    width: 20vw; 
+    border-radius: 3vw; 
+    /* border: 1px solid #ddd;  */
+    background-color: #000000;
+    color: #ddd;
+} 
+#send:hover{ 
+    background-color: #C7FF51; 
+    color: #000000;
+} 
+#reg{ 
+    font-size: 1.5vw; 
+    font-family: 'Aeroport'; 
+    color: #ffffff;
+}
+
+/* shop*/
+.txt{
+    font-family: 'Aeroport'; 
+    font-size: 1.2vw; 
+    background: #000000; 
+    color: #ffffff;
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 7vw; 
+    text-align: center; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    width: 11vw; 
+    height: 3vw; 
+    display: flex;
+    
+}
+#txt{
+    position: fixed;
+    display: flex;
+    margin-left: 0.5vw;
+    margin-top: 6vw; 
+}
+.txt:hover{
+    background: #ffffff; 
+    border: 1.5px solid rgb(0, 0, 0);
+    color: #000000;
+}
+
+.merch{
+    position: absolute;
+    display: flex;
+    margin-top: 13vw;
+    text-align: center;
+    margin-top: 10vw; 
+    overflow: scroll;
+    /* overflow-x: auto; */
+
+}
+#shop1{
+    position: relative;
+    width: 33.5vw;
+    /* left: 5%;
+    top: 50%; */
+}
+.merch::-webkit-scrollbar{
+    width: 0;
+}
+
+.cart{
+    position: absolute;
+    margin-top: 35vw;
+    margin-left: 25vw;
+    background-color: #C7FF51;
+    border-radius: 10vw;
+    width: 5vw;
+    height: 5vw;
+    z-index: 3;
+}
+.cart:hover{
+    background: #ffffff; 
+    border: 1.5px solid rgb(0, 0, 0);
+}
+#cart{
+    width: 5vw;
+}
+
+.futer1{
+    position: fixed;
+    margin-top: 34vw;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* about */
+.pers{
+    width: 50vw;
+}
+
+.blockabout{
+    display: flex;
+}
+.about2{
+    margin-top: 8vw;
+    margin-left: 2vw;
+}
+
+.calameo{
+    background-color: #C7FF51;
+    border-radius: 10vw;
+    width: 10vw;
+    height: 4vw;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Aeroport';
+    line-height: 3.5vw;
+    margin-top: 1vw;
+}
+#space1{
+    width: 30vw;
+    margin-top: 1vw;
+}
